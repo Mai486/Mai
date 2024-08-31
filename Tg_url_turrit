@@ -1,0 +1,16 @@
+#!name= Tg外链跳转Turrit
+#!desc= Tg外部链接跳转第三方客户端Turrit
+#!openurlUrl=
+#!author= 麻衣
+#!homepage= 
+#!icon= https://raw.githubusercontent.com/LovedGM/Quantumult-X-TuBiao/main/YYY/yyy5.png
+#!tag = 樱岛,麻衣
+#!system = 
+#!system_version = 
+#!loon_version =
+
+[rewrite]
+(https:\/\/)?t.me\/(.+) 302 turrit://resolve?domain=$2
+
+[mitm]
+hostname = t.me
